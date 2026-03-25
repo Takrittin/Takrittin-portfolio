@@ -72,7 +72,7 @@ const Hero = () => {
                 <div className="text-gray-300">[SYSTEM INITIALIZED] - Takrittin Portfolio v1.0</div>
                 <div className="text-gray-400">Welcome to Takrittin! Portfolio. To see more information just scroll down.</div>
 
-                {/* Starlight Dropdown */}
+                {/* Dropdown */}
                 <div className="relative inline-block mt-4">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
@@ -96,9 +96,10 @@ const Hero = () => {
                     {isOpen && (
                         <div className="absolute left-0 mt-2 w-48 rounded-md bg-[#161b22]/90 backdrop-blur-md border border-[#30363d] shadow-[0_10px_30px_rgba(0,0,0,0.5)] overflow-hidden z-20 animate-in fade-in zoom-in duration-200">
                             {[
-                                { label: 'Resume', icon: '📄', link: '#resume' },
+                                { label: 'About me', icon: '👤', link: '#about' },
+                                { label: 'Projects', icon: '💻', link: '#projects' },
+                                { label: 'Experience', icon: '💼', link: '#experience' },
                                 { label: 'Connect', icon: '🤝', link: '#contact' },
-                                { label: 'Source', icon: '💻', link: 'https://github.com' },
                             ].map((item) => (
                                 <a
                                     key={item.label}

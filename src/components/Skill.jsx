@@ -13,7 +13,9 @@ const Skill = () => {
     "[Javascript]", 
     "[React]", 
     "[Node.js]",
-    "[Express.js]"
+    "[Express.js]",
+    "[C++]",
+    "[Java]"
   ],
   "Data Science": [
     "[Python]", 
@@ -25,7 +27,6 @@ const Skill = () => {
   "Database": [
     "[PostgreSQL]",
     "[MongoDB]",
-    "[Oracle]"
   ],
   "tools": [
     "[Git/GitHub]", 
