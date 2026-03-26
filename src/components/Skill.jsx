@@ -9,27 +9,28 @@ const Skill = () => {
             <div className="bg-[#0d1117] p-5 md:p-6 rounded-lg border border-[#30363d] max-w-4xl shadow-inner overflow-x-auto">
                 <pre className="text-[#27c93f] text-sm md:text-base leading-relaxed">
                     {`{
-  "Full Stack development": [
-    "[Javascript]", 
-    "[React]", 
-    "[Node.js]",
-    "[Express.js]",
-    "[C++]",
-    "[Java]"
-  ],
-  "Data Science": [
+  "Languages": [
     "[Python]", 
-    "[Pandas]", 
-    "[PySpark]",
-    "[Scikit-learn]",
-    "[PySpark]"
+    "[JavaScript]", 
+    "[Java]",
+    "[C++]",
   ],
-  "Database": [
-    "[PostgreSQL]",
-    "[MongoDB]",
+  "Data Engineer & Machine Learning": [
+    "[Pandas]", 
+    "[Sckit-learn]", 
+    "[PySpark]",
+  ],
+  "Frontend": [
+    "[HTML]",
+    "[CSS]",
+    "[React.js]"
+  ],
+  "Backend": [
+    "[Node.js]",
+    "[Express.js]"
   ],
   "tools": [
-    "[Git/GitHub]", 
+    "[Git]", 
     "[Docker]", 
   ]
 }`}
