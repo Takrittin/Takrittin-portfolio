@@ -29,7 +29,7 @@ const Hero = () => {
                             animationDelay: (Math.random() * 10) + 's'
                         }}
                     >
-                        <div 
+                        <div
                             className="relative shadow-[0_0_10px_2px_#00ffff]"
                             style={{
                                 width: '2px',
@@ -39,7 +39,7 @@ const Hero = () => {
                                 transform: 'rotate(-45deg)'
                             }}
                         >
-                            <div 
+                            <div
                                 className="absolute"
                                 style={{
                                     top: '50%',
@@ -77,7 +77,7 @@ const Hero = () => {
                     <button
                         onClick={() => setIsOpen(!isOpen)}
                         className={
-                            "px-4 py-2 bg-[#0d1117] border border-[#30363d] rounded-md text-sm font-semibold flex items-center gap-2 transition-all duration-300 hover:border-[#00ffff] hover:shadow-[0_0_15px_rgba(0,255,255,0.3)] " + 
+                            "px-4 py-2 bg-[#0d1117] border border-[#30363d] rounded-md text-sm font-semibold flex items-center gap-2 transition-all duration-300 hover:border-[#00ffff] hover:shadow-[0_0_15px_rgba(0,255,255,0.3)] " +
                             (isOpen ? "border-[#00ffff] shadow-[0_0_15px_rgba(0,255,255,0.4)]" : "")
                         }
                     >
@@ -94,8 +94,9 @@ const Hero = () => {
 
                     {/* Dropdown Menu with Glassmorphism/Starlight feel */}
                     {isOpen && (
-                        <div className="absolute left-0 mt-2 w-48 rounded-md bg-[#161b22]/90 backdrop-blur-md border border-[#30363d] shadow-[0_10px_30px_rgba(0,0,0,0.5)] overflow-hidden z-20 animate-in fade-in zoom-in duration-200">
+                        <div className="absolute left-0 mt -2 w-48 rounded-md bg-[#161b22]/90 backdrop-blur-md border border-[#30363d] shadow-[0_10px_30px_rgba(0,0,0,0.5)] overflow-hidden z-20 animate-in fade-in zoom-in duration-200">
                             {[
+                                { label: 'Resume', icon: '📄', link: 'https://drive.google.com/file/d/10-ywtIYVdA1ycgpKAdNMH4uKP7vZl26V/view?usp=sharing' },
                                 { label: 'About me', icon: '👤', link: '#about' },
                                 { label: 'Projects', icon: '💻', link: '#projects' },
                                 { label: 'Experience', icon: '💼', link: '#experience' },
@@ -104,6 +105,9 @@ const Hero = () => {
                                 <a
                                     key={item.label}
                                     href={item.link}
+                                    // Logic: If the link starts with "http", open in new tab; otherwise, stay in current tab.
+                                    target={item.link.startsWith('http') ? '_blank' : '_self'}
+                                    rel={item.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-[#21262d] hover:text-[#00ffff] transition-colors"
                                 >
                                     <span className="mr-2">{item.icon}</span> {item.label}
