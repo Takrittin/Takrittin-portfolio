@@ -8,10 +8,10 @@ const About = () => {
             </div>
             <div className="pl-4 md:pl-6 border-l-2 border-gray-700 max-w-3xl space-y-4">
                 <h2 className="text-xl md:text-2xl font-bold text-white mb-4">About Me</h2>
-                <p className="text-gray-300 leading-relaxed">   I am a Computer Engineering student at Chulalongkorn University. 
-                    I have experience in building backend systems and working with databases like PostgreSQL, MongoDB, and Oracle. I also have basic knowledge of Python and PySpark for processing and analyzing data. 
-                    During my internship, I worked on a real project and learned how to fix problems in both frontend and backend systems. 
-                    I am interested in data engineering and want to learn more about building data pipelines and working with cloud platforms.</p>
+                <p className="text-gray-300 leading-relaxed">Computer Engineering student at Chulalongkorn University 
+                    with a strong interest in Data Engineering and AI. Experienced in backend systems and data processing using Python, Pandas, and PySpark. 
+                    Passionate about designing data pipelines, processing large-scale data, and applying machine learning techniques to real-world problems.
+                </p>
             </div>
         </section>
     );
